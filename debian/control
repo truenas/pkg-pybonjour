@@ -1,0 +1,19 @@
+Source: pybonjour
+Section: python
+Priority: optional
+Maintainer: William Grzybowski <william@grzy.org>
+Build-Depends: debhelper-compat (= 12), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.4.0
+Homepage: https://github.com/depl0y/pybonjour-python3
+
+Package: python3-pybonjour
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Pure-Python interface to Apple Bonjour
+ pybonjour provides a pure-Python interface (via ctypes) to Apple
+ Bonjour and compatible DNS-SD libraries (such as Avahi).  It allows
+ Python scripts to take advantage of Zero Configuration Networking
+ (Zeroconf) to register, discover, and resolve services on both local
+ and wide-area networks.  Since pybonjour is implemented in pure
+ Python, scripts that use it can easily be ported to Mac OS X, Windows,
+ Linux, and other systems that run Bonjour.
